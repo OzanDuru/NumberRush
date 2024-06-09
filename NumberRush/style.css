@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("stardewbackground.png");
+    background-size: cover;
+    font-family: 'Cambria', Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.maindiv {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+#timer, #score {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: black;
+}
+
+#restartButton {
+    padding: 10px 20px;
+    margin: 24px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#restartButton:hover {
+    background-color: #38333d;
+}
+
+p {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+#dask {
+    border-collapse: collapse;
+    margin: 0 auto;
+    background-color: rgb(225, 250, 0);
+    border: 4px solid black;
+    box-shadow: 0px 0px 20px black;
+}
+
+#dask td {
+    width: 80px;
+    height: 80px;
+    font-size: 24px;
+    font-weight: 700;
+    border: 2px solid black;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#dask td:hover {
+    background-color: aquamarine;
+}
+
+.maindiv select {
+    margin-bottom: 20px;
+    padding: 5px 10px;
+    font-size: 16px;
+}
+
+.maindiv label {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+@keyframes blinkCorrect {
+    0% { background-color: green; }
+    50% { background-color: lightgreen; }
+    100% { background-color: green; }
+}
+
+@keyframes blinkWrong {
+    0% { background-color: red; }
+    50% { background-color: pink; }
+    100% { background-color: red; }
+}
